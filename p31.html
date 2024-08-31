@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>MARQUEE TAG..!</title>
+    </head>
+    <body>
+        <center>
+            <h1>marquee tag..!</h1>
+            <p>the marquee html element is used to insert a scrolling area of text</p>
+        </center>
+        <hr>
+        <marquee>this is a marquee tag..!</marquee>
+        <marquee><a href="#">this is a marquee tag..!</a></marquee>
+        <marquee bgcolor="lightgreen">this is a marquee tag..!</marquee>
+        <b><hr></b>
+
+        <h2>marquee tag behavior attribute </h2>
+
+        <marquee behavior="alternate" bgcolor="skyblue">This is an alternate marquee tag</marquee>
+        <br>
+        <marquee behavior="scroll" bgcolor="purple">This is an alternate marquee tag</marquee>
+        <br>
+        <marquee behavior="slide" bgcolor="skyblue">This is an alternate marquee tag</marquee>
+        <b><hr></b>
+
+        <h2>marquee tag direction attribute</h2>
+
+        <marquee direction="right" bgcolor="teal">this is an right direction marquee tag</marquee>
+        <br><br>
+        <marquee direction="left" bgcolor="teal" >this is an left direction marquee tag</marquee>
+        <br><br>
+        <marquee direction="up" bgcolor="red" height="100px">this is an up direction marquee tag</marquee>
+        <br><br>
+        <marquee direction="down" bgcolor="pink" height="100px">this is an down direction marquee tag</marquee>
+        <br><br>
+
+        <h2>marquee tag scrollamount attribute</h2>
+
+        <marquee bgcolor="skyblue" scrollamount="1">This is a marquee tag</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="1000" id="test">This is a marquee tag</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="18">This is a marquee tag</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="5">This is a marquee tag</marquee>
+        <b><hr></b>
+
+        <h2>marquee tag javascript code</h2>
+        <script>
+            document.getElementById("test").onmouseenter = function() {
+                document.getElementById("test").stop();
+            } 
+            document.getElementById("test").onmouseleave = function() {
+                document.getElementById("test").start();
+            }
+        </script>
+    </body>
+</html>
